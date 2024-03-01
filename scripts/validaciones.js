@@ -47,13 +47,14 @@ function validateForm() {
 function setErrorFor(input, message) {
     const formControl = input.parentNode;
     const errorMessage = formControl.querySelector(".error-message");
-    formControl.className = "form-control error";
+    formControl.classList.add("form-control");
     errorMessage.innerText = message;
 }
 
 function setSuccessFor(input) {
     const formControl = input.parentNode;
-    formControl.className = "form-control success";
+    formControl.classList.add("form-control");
+    formControl.classList.add("success");
 }
 
 function isEmail(email) {
