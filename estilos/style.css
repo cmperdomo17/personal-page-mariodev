@@ -83,7 +83,7 @@ body{
 .gallery_section h2 {
     margin: 0;
     font-size: 2rem;
-    color: #67bee6;
+    color: #8bd7fa;
 }
 
 .section-img{
@@ -105,7 +105,6 @@ body{
 .article-1{
     font-size: 1.4rem;
     font-weight: 500;
-    text-wrap: pretty;
 }
 
 .header-title {
@@ -140,10 +139,12 @@ body{
 .form-contacto{
     width: 100%;
     margin: auto;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .contact_p {
+    margin: 0;
+    font-size: 1.7rem;
     color: #8bd7fa;
 }
 
@@ -175,7 +176,6 @@ label {
 }
 
 .form-contacto textarea{
-    margin-bottom: 20px;
     padding: 5px;
     border-radius: 10px;
     width: 50%;
@@ -264,11 +264,19 @@ tr:hover {
 }
 
 #article-2{
-    padding: 30px;
     font-size: large;
 }
 
-.study_title {
+.study_title1 {
+    margin: 0 0 2.5rem 0;
+}
+
+.study_title1, .study_title2 {
+    font-size: 2rem;
+    color: #8bd7fa;
+}
+
+.study_title2 {
     margin: 2.5rem 0 2.5rem 0;
 }
 
@@ -317,6 +325,7 @@ tr:hover {
 }
 
 .btn-send {
+    margin: 10px 0 0px 0;
     font-family: inherit;
     font-weight: 700;
     font-size: 20px;
@@ -370,3 +379,4 @@ tr:hover {
         transform: translateY(-0.1em);
     }
 }
+  
