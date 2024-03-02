@@ -22,6 +22,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .navbar h1 {
@@ -78,6 +79,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 2.2rem;
 }
 
 .gallery_section h2 {
@@ -263,10 +266,6 @@ tr:hover {
     font-weight: bold;
 }
 
-#article-2{
-    font-size: large;
-}
-
 .study_title1 {
     margin: 0 0 2.5rem 0;
 }
@@ -379,4 +378,129 @@ tr:hover {
         transform: translateY(-0.1em);
     }
 }
-  
+
+.card {
+    margin-top: 2rem;
+    position: relative;
+    width: 580px;
+    height: 320px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #7ac4e6;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card img {
+    width: 35rem;
+    height: 19rem;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(131, 243, 255, 0.448);
+}
+
+.card__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #7ac4e6;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 3rem;
+    color: #020617;
+    font-weight: 700;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #01030d;
+    line-height: 1.4;
+}
+
+.Btn {
+    margin-top: 1.1rem;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background-color: #020617;
+    overflow: hidden;
+}
+
+.svgIcon, .svgIcon2 {
+    transition-duration: .3s;
+    transform: scale(1.3);
+}
+
+.svgIcon path {
+    fill: white;
+}
+
+.svgIcon2 path {
+    fill: none;
+}
+
+.text {
+    position: absolute;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+}
+
+.btn-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1.3rem;
+}
+
+.Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+}
+
+.Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+}
+
+.Btn:hover .svgIcon, .Btn:hover .svgIcon2 {
+    opacity: 0;
+    transition-duration: .3s;
+}
