@@ -111,6 +111,22 @@ body{
     color: #ffffffe2;
 }
 
+@media (max-width: 720px) {
+    html, body, body * {
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .section-contenido {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+    } 
+}
+
 .gallery_section {
     display: flex;
     justify-content: center;
