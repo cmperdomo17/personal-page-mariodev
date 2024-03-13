@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="description" content="template initial">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="estilos/style.css">
         <script src="scripts/actions.js"></script> 
         <title>Inicio</title>
@@ -11,14 +13,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
     </head>
-
     <body>
-
-        <nav class="navbar">
+        <!-- Navbar anterior -->
+        <!-- <nav class="navbar">
             <a href="index.html">
                 <h1>&lt; mario.<span class="highlight">dev </span>/&gt;</h1>
             </a>
-        
             <ul class="ls-navegacion">
                 <li class="link-nav"><a href="index.html">Inicio</a></li>
                 <li class="link-nav"><a href="proyectos.html">Proyectos</a></li>
@@ -26,8 +26,42 @@
                 <li class="link-nav"><a href="pasatiempos.html">Pasatiempos</a></li>
                 <li class="link-nav"><a href="contacto.html">Contacto</a></li>
             </ul>
+        </nav> -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <h1>&lt; mario.<span class="highlight">dev </span>/&gt;</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 ls-navegacion">
+                            <li class="nav-item link-nav">
+                                <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item link-nav">
+                                <a class="nav-link mx-lg-2" href="proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="nav-item link-nav">
+                                <a class="nav-link mx-lg-2" href="estudios.html">Estudios</a>
+                            </li>
+                            <li class="nav-item link-nav">
+                                <a class="nav-link mx-lg-2" href="pasatiempos.html">Pasatiempos</a>
+                            </li>
+                            <li class="nav-item link-nav">
+                                <a class="nav-link mx-lg-2" href="contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
-
         <section class="section-contenido">
             <section>
                 <section class="section-img">
@@ -40,11 +74,27 @@
                         <h3 class="header-title">Hola, soy <span class="name-highlight">Mario!</span></h3>
                     </header>
                     <p class="description1">Estudiante de Ingeniería de Sistemas</p>
-        
                     <p class="description2">Actualmente estoy cursando el séptimo semestre de Ingeniería de Sistemas. <br> Mi meta es ser desarrollador de software y desarrollador Frontend <br> Nací en Pitalito Huila el 27 de Noviembre del 2002.</p>
                 </article>
+                <div class="gallery_section">
+                    <h2 id="title-pasatiempos-index">Mis Pasatiempos</h2>
+                    <ul class="pasatiempos_list">
+                        <li>Jugar videojuegos</li>
+                        <li>Entrenar pesado y al fallo</li>
+                        <li>Programar</li>
+                        <li>Ver y jugar fútbol</li>
+                        <li>Escuchar música</li>
+                    </ul>
+                    <section class="galeria">
+                        <img src="/estilos/media/pasatiempos1.png" alt = "Imagen de un videojuego">
+                        <img src="/estilos/media/pasatiempos2.png" alt = "Imagen de Gym">
+                        <img src="/estilos/media/pasatiempos3.jpg" alt = "Imagen de código JavaScript">
+                        <img src="/estilos/media/pasatiempos4.png" alt = "Imagen de Luis Diaz">
+                        <img src="/estilos/media/pasatiempos5.png" alt = "Imagen de unas diademas">
+                    </section>
+                </div>
             </section>
-        </section>    
+        </section>
         <footer class="footer-redes">
             <h4>Copyrigth 2024 - Universidad del Cauca</h4>
             <h4>Popayan - Cauca</h4>
