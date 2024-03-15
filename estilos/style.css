@@ -608,12 +608,13 @@ tr:hover {
     }
     .card__content{
         padding: 10px;
+        height: 100%;
     }
     .card__title {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .card__description {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     .Btn {
         width: 40px;
